@@ -1,55 +1,86 @@
-body{
-/*background-color:#300A24;*/
-background-color:#002B36;
-color:#FFFFFF;
-/*font-family: 'Rubik', sans-serif;*/
-font-family: 'Consolas', Monaco, monospace;
-/*Centaur*/
-/*font-family: 'Garamond', Monaco, monospace;*/
-      /*font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
-/*font-size: calc(10px + 0.33vw);*/
-      /*-webkit-font-smoothing: antialiased;*/
-padding: 5vh 10vw;
-      /*color: #123134;*/
-font-size:20px;
-}
-/*a{*/
-/*background-color:#00FFFF;*/
-/*color:#00FFFF;*/
-/*list-style-type:none;*/
-/*}*/
-
-.center{
-text-align:center;
+:root {
+  --base03: #002b36;
+  --base02: #073642;
+  --base01: #586e75;
+  --base00: #657b83;
+  --base0: #839496;
+  --base1: #93a1a1;
+  --base2: #eee8d5;
+  --base3: #fdf6e3;
+  --yellow: #b58900;
+  --orange: #cb4b16;
+  --red: #dc322f;
+  --magenta: #d33682;
+  --violet: #6c71c4;
+  --blue: #268bd2;
+  --cyan: #2aa198;
+  --green: #859900;
 }
 
-body warning{
-color:#9B7DA5;
-font-size:20px;
-}
-body error{
-color:#FF0000;
-font-size:20px;
-}
-body ok {
-color:#00FF00;
-font-size:20px;
-}
-body info{
-color:#2EC7C7;
-font-size:20px;
-}
-body a{
-color:#FFFFFF;
-/*color:#00FFFF;*/
-/*font-size:20px;*/
-}
-.log{
-color:grey;
-opacity:0.25;
-font-size:12pt;
-}
-.project{
-padding-left:60px; text-indent:-22px;
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--base03);
+  font-family: Consolas, Monaco, monospace;
+  font-size: 12pt;
+  line-height: 1.6;
 }
 
+body div {
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+p {
+  margin: 0;
+  color: var(--base0);
+}
+
+div p:first-child {
+  color: var(--green);
+  margin-top: auto;
+  padding-top: 50px;
+  font-size: 20px;
+}
+
+div p:nth-child(2) {
+  margin: 24px 0;
+  font-size: 20px;
+}
+
+.title {
+  color: var(--base0);
+  font-weight: bold;
+  margin-bottom: 36px;
+}
+
+.title span:last-child {
+  background-color: var(--yellow);
+}
+
+a {
+  color: var(--blue);
+  font-size: 18px;
+}
+
+#funny {
+  color: var(--cyan);
+  padding: 40px 0 32px 0;
+  font-style: italic;
+  font-size: 24px;
+}
+
+.log {
+  color: var(--base01);
+  margin: 4px 0;
+}
+
+div p:last-child {
+  margin-bottom: auto;
+  padding-bottom: 50px;
+}
